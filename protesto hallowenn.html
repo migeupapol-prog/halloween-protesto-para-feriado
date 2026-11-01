@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Halloween Merece um Feriado! 🎃</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f5f5f5;
+            background:
+                radial-gradient(circle at top, #3a125c, #12051f 55%, #050208);
+            overflow-x: hidden;
+        }
+
+        /* Decorações flutuantes */
+        .decoracao {
+            position: fixed;
+            font-size: 35px;
+            opacity: 0.25;
+            z-index: -1;
+            animation: flutuar 6s ease-in-out infinite alternate;
+        }
+
+        .d1 { top: 10%; left: 5%; }
+        .d2 { top: 20%; right: 8%; animation-delay: 1s; }
+        .d3 { bottom: 10%; left: 10%; animation-delay: 2s; }
+        .d4 { bottom: 15%; right: 7%; animation-delay: 3s; }
+
+        @keyframes flutuar {
+            from {
+                transform: translateY(0) rotate(-5deg);
+            }
+
+            to {
+                transform: translateY(-25px) rotate(5deg);
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #ff8c00;
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            text-shadow:
+                0 0 10px #ff6600,
+                0 0 25px #7a1cff;
+        }
+
+        .subtitulo {
+            color: #d6b8ff;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        main {
+            width: min(1000px, 92%);
+            margin: 20px auto 50px;
+        }
+
+        .protesto {
+            background: rgba(20, 8, 30, 0.88);
+            border: 2px solid #ff7b00;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow:
+                0 0 20px rgba(255, 102, 0, 0.35),
+                0 0 40px rgba(113, 38, 180, 0.25);
+        }
+
+        h2 {
+            color: #ff9d1c;
+            margin-top: 0;
+        }
+
+        .protesto p {
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .destaque {
+            color: #ffad42;
+            font-weight: bold;
+        }
+
+        .botoes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        button {
+            border: none;
+            border-radius: 12px;
+            padding: 16px 22px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(135deg, #ff7900, #9c20c9);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff7900;
+        }
+
+        .conteudo-extra {
+            display: none;
+            background: rgba(38, 14, 55, 0.95);
+            border-left: 5px solid #ff7900;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 15px;
+            animation: aparecer 0.4s ease;
+        }
+
+        .conteudo-extra.ativo {
+            display: block;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        li {
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #b99acc;
+        }
+
+        @media (max-width: 600px) {
+            .protesto {
+                padding: 20px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Decorações de Halloween -->
+    <div class="decoracao d1">🦇</div>
+    <div class="decoracao d2">👻</div>
+    <div class="decoracao d3">🎃</div>
+    <div class="decoracao d4">🕷️</div>
+
+    <header>
+        <h1>🎃 Halloween Merece um Feriado! 🎃</h1>
+        <p class="subtitulo">
+            Uma página de protesto pela valorização de uma data cheia de cultura e diversão!
+        </p>
+    </header>
+
+    <main>
+        <section class="protesto">
+
+            <h2>📢 O nosso protesto</h2>
+
+            <p>
+                Todos os anos, o dia <span class="destaque">31 de outubro</span>
+                chega trazendo fantasias, filmes, histórias assustadoras e muita
+                criatividade. Mesmo assim, muitas pessoas no Brasil precisam
+                continuar suas atividades normais e não podem aproveitar a data
+                como gostariam.
+            </p>
+
+            <p>
+                O nosso protesto defende uma ideia simples: <span class="destaque">
+                por que o Halloween não pode ser reconhecido como uma data especial
+                com mais espaço para celebração?</span> Um possível feriado poderia
+                incentivar eventos culturais, atividades escolares, criatividade e
+                momentos de convivência.
+            </p>
+
+            <p>
+                Não se trata de esquecer as tradições brasileiras. Pelo contrário:
+                conhecer diferentes culturas e comemorar novas tradições também pode
+                ser uma forma de aprender e se divertir. O Halloween já inspira
+                festas, filmes, livros e fantasias em várias partes do mundo!
+            </p>
+
+            <div class="botoes">
+
+                <button onclick="mostrar('motivos')">
+                    🎃 Motivos para um feriado
+                </button>
+
+                <button onclick="mostrar('definicao')">
+                    📜 O que define um feriado?
+                </button>
+
+            </div>
+
+            <!-- Motivos -->
+            <div id="motivos" class="conteudo-extra">
+
+                <h2>🎃 Motivos para um feriado</h2>
+
+                <ul>
+                    <li>
+                        <strong>🎭 Criatividade:</strong>
+                        o Halloween incentiva fantasias, decoração, arte e histórias.
+                    </li>
+
+                    <li>
+                        <strong>🤝 Convivência:</strong>
+                        eventos e festas podem reunir amigos, famílias e comunidades.
+                    </li>
+
+                    <li>
+                        <strong>🌎 Cultura:</strong>
+                        conhecer tradições de outros lugares ajuda a entender diferentes
+                        costumes e histórias.
+                    </li>
+
+                    <li>
+                        <strong>🎬 Diversão:</strong>
+                        seria uma oportunidade para aproveitar filmes, jogos, festas e
+                        atividades temáticas.
+                    </li>
+
+                    <li>
+                        <strong>📚 Aprendizado:</strong>
+                        escolas e espaços culturais poderiam usar a data para falar sobre
+                        história, tradições e diferentes celebrações ao redor do mundo.
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Definição de feriado -->
+            <div id="definicao" class="conteudo-extra">
+
+                <h2>📜 O que define um feriado?</h2>
+
+                <p>
+                    De forma geral, um feriado é uma data oficialmente reconhecida
+                    para lembrar, celebrar ou marcar acontecimentos importantes para
+                    uma sociedade. Os feriados podem ter motivos históricos, culturais,
+                    religiosos ou cívicos.
+                </p>
+
+                <p>
+                    A criação de um feriado oficial depende de decisões e leis das
+                    autoridades competentes. Portanto, gostar de uma comemoração não
+                    significa automaticamente que ela se torne um feriado nacional.
+                </p>
+
+                <p>
+                    <strong>Esse é justamente o argumento do nosso protesto:</strong>
+                    se uma data cultural se torna importante para muitas pessoas e gera
+                    atividades, encontros e manifestações criativas, é válido discutir
+                    se ela merece mais reconhecimento.
+                </p>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        🎃 Feliz Halloween! 👻 Uma ideia, um protesto e muita criatividade. 🦇
+    </footer>
+
+    <script>
+        function mostrar(id) {
+            const elementos = document.querySelectorAll(".conteudo-extra");
+
+            elementos.forEach(function(elemento) {
+                if (elemento.id !== id) {
+                    elemento.classList.remove("ativo");
+                }
+            });
+
+            document.getElementById(id).classList.toggle("ativo");
+        }
+    </script>
+
+</body>
+</html>
